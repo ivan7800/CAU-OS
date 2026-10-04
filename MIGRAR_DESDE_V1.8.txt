@@ -1,0 +1,34 @@
+MIGRAR CAU OS v1.8.x A v2.0 KNOWLEDGE SERVER
+==============================================
+
+Si YA tienes documentacion cargada en v1.8.x, NO empieces de cero.
+
+METODO RECOMENDADO
+------------------
+1. Cierra completamente CAU OS v1.8.x.
+2. Haz una copia completa de la carpeta antigua.
+3. Copia esa carpeta a una nueva ubicacion de servidor, por ejemplo:
+      C:\CAU-OS-Server
+4. Sustituye SOLO el antiguo CAU-OS.exe por el CAU-OS.exe de v2.0.
+5. Copia tambien los nuevos docs, README y config\server.json de v2.0.
+6. Conserva de la instalacion anterior:
+      data\
+      library\
+      exports\
+      logs\   (si quieres conservar logs previos)
+7. Arranca v2.0 desde el propio servidor.
+8. Abre http://localhost:8090/ y crea el primer Administrador.
+9. Verifica que documentos, soluciones, categorias e indice aparecen correctamente.
+10. Crea usuarios y prueba primero con un grupo pequeno.
+
+La v2.0 eleva el schema de estado a 17 de forma automatica.
+
+NO HAGAS ESTO
+-------------
+- No migres con v1.8 ejecutandose.
+- No borres data\state.json ni library\ si quieres conservar la base de conocimiento.
+- No copies session.url ni archivos de lock de una instancia en ejecucion.
+- No sobrescribas tu unica copia de produccion sin backup.
+
+Si la instalacion v1.8 ya estaba en uso real, conserva el backup original hasta terminar
+la validacion funcional de v2.0.

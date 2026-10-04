@@ -1,0 +1,18 @@
+CAU OS v2.0 - ANTIVIRUS / EDR
+================================
+
+La release no incluye BAT, CMD, PS1 ni VBS de arranque o validacion.
+Knowledge Server no registra endpoints de ejecucion de scripts, diagnosticos ni remediaciones.
+
+CAU-OS.exe no esta firmado con un certificado Authenticode corporativo, por lo que SmartScreen/EDR puede aplicar reputacion o una politica de allowlisting.
+
+NO desactives Defender/EDR para ejecutarlo.
+Si hay una deteccion, registra:
+- producto EDR/AV;
+- nombre exacto de la deteccion;
+- hash SHA-256 de CAU-OS.exe;
+- politica/regla que lo ha bloqueado.
+
+Valida el binario segun el procedimiento corporativo y, para despliegue estable, firma el ejecutable con el certificado de firma de codigo autorizado por la empresa o tramita el allowlisting correspondiente.
+
+El aviso del antiguo VALIDAR_WINDOWS.bat no aplica a esta release: ese BAT y CAU-OS-Qualify.exe no se distribuyen.

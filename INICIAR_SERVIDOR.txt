@@ -1,0 +1,34 @@
+CAU OS v2.0.0 - KNOWLEDGE SERVER (PAQUETE ENDURECIDO)
+======================================================
+
+PRIMER ARRANQUE SEGURO
+----------------------
+1. DESCOMPRIME todo el ZIP en una carpeta fija del servidor.
+   Recomendado: C:\CAU-OS-Server
+
+2. La configuracion incluida escucha SOLO en 127.0.0.1:8090.
+   Ejecuta CAU-OS.exe en el propio servidor.
+
+3. Abre:
+   http://localhost:8090/
+
+4. Crea el PRIMER ADMINISTRADOR.
+
+ANTES DE HABILITAR ACCESO LAN
+-----------------------------
+1. Instala certificado TLS corporativo y protege la clave con ACL.
+2. Configura tlsCertFile / tlsKeyFile.
+3. Anade el FQDN real a trustedHosts.
+4. Crea una regla de Firewall de Windows limitada a perfil Domain y a la VLAN/subred autorizada.
+5. Cambia bindAddress a 0.0.0.0 solo cuando los puntos anteriores esten listos.
+6. Reinicia CAU OS y accede mediante HTTPS.
+
+Consulta config\server.production.example.json como plantilla.
+
+IMPORTANTE
+----------
+- No expongas CAU OS a Internet.
+- No uses HTTP sin cifrar para usuarios remotos en produccion.
+- No ejecutes CAU OS como Domain Admin.
+- Conserva backups fuera del mismo disco.
+- Esta build binaria usa Go 1.23.2 y debe recompilarse con una version soportada antes de considerarla release de produccion excelente. Ver docs\AUDIT-v2.0.0-2026-10-04.md.

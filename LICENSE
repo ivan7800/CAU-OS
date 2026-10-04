@@ -1,0 +1,27 @@
+CAU OS Binary Distribution License
+Copyright (c) 2026 I. Roig. All rights reserved.
+
+Permission is granted to download, store, execute, and evaluate unmodified copies
+of the CAU OS binary distribution for personal, educational, laboratory, or
+internal organizational use.
+
+You may redistribute an unmodified copy of the complete distribution provided
+that this license, the copyright notice, security documentation, and integrity
+manifest remain included.
+
+You may not, without prior written permission from the copyright holder:
+
+1. sell, sublicense, rent, or commercially redistribute CAU OS;
+2. remove or alter copyright, license, security, or attribution notices;
+3. claim authorship of CAU OS or present a modified package as an official build;
+4. use the CAU OS name or branding to imply endorsement of a modified build.
+
+This distribution does not include the corresponding source code. Nothing in
+this license grants rights to source code that is not part of the distribution.
+Applicable law may provide additional rights that this license does not limit.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OF THE SOFTWARE.

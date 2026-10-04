@@ -1,0 +1,14 @@
+{
+  "mode": "server",
+  "bindAddress": "127.0.0.1",
+  "port": 8090,
+  "autoOpenBrowser": true,
+  "sessionHours": 8,
+  "autoBackupHours": 24,
+  "backupRetention": 14,
+  "trustedHosts": [
+    "localhost"
+  ],
+  "tlsCertFile": "",
+  "tlsKeyFile": ""
+}

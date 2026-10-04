@@ -1,0 +1,34 @@
+CAU OS v2.0.0 KNOWLEDGE SERVER
+Build date: 2026-10-02
+Target: Windows x64 GUI (PE32+)
+Go: pure stdlib runtime / CGO disabled for Windows build
+
+Automated gates:
+- go test ./...: PASS
+- go test -race ./...: PASS
+- go vet ./...: PASS
+- node --check web/app.js: PASS
+
+Functional smoke:
+- public login shell: PASS
+- loopback initial admin bootstrap: PASS
+- Reader read/search/download: PASS
+- Reader write denied: PASS
+- Technician solution feedback: PASS
+- Editor document import/index: PASS
+- Editor server/UNC root management denied: PASS
+- Admin users/audit/backups: PASS
+- document local-open endpoint: 410 PASS
+- session invalidation after password reset: PASS
+- legacy scripts/diagnostics/tickets/remediations routes: not registered PASS
+- backup includes state/library/config/audit: PASS
+
+Manual corporate gates still required:
+- Defender/EDR/SmartScreen
+- AppLocker/WDAC
+- Windows Firewall/VLAN
+- corporate TLS certificate
+- Windows ACLs/service account
+- UNC permissions
+- browser policies
+- real-corpus soak/performance
